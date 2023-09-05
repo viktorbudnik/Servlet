@@ -10,7 +10,7 @@ import java.io.IOException;
 public class RedirectServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.sendRedirect(req.getContextPath() + "/greeting");
+        resp.sendRedirect(req.getContextPath() + "/greeting?name=Viktor");
 
     }
 }
